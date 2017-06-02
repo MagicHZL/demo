@@ -79,11 +79,11 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         
         offsetX = leve + offsetX;
-//        UIView.animate(withDuration: 0.02) {
+        UIView.animate(withDuration: 0.1) {
         
-        self.collectionView?.contentOffset = CGPoint.init(x: self.offsetX, y: 0.0);
+            self.collectionView?.contentOffset = CGPoint.init(x: self.offsetX, y: 0.0);
             
-//        };
+        };
         if isFly {
             
             birdieY = birdieY - (CGFloat(leve) * (KSheight - 80) / (cellWidth - 50));
@@ -126,11 +126,11 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             
         }
     
-//        UIView.animate(withDuration: 0.02, animations: {
+        UIView.animate(withDuration: 0.1, animations: {
         
-        self.birdieView.center = CGPoint.init(x: KSwidth/2.5, y: self.birdieY);
-//        });
-        
+            self.birdieView.center = CGPoint.init(x: KSwidth/2.5, y: self.birdieY);
+        });
+    
         for point :CGPoint in pointArry{
             
             let upB = upP?.contains(point);
