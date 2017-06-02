@@ -20,9 +20,9 @@ class BirdieCell: UICollectionViewCell {
         super.init(frame: frame)
       
         upView = UIView.init();
-        self.addSubview(upView);
+        self.contentView.addSubview(upView);
         downView = UIView.init();
-        self.addSubview(downView);
+        self.contentView.addSubview(downView);
         
     }
     
